@@ -1,9 +1,9 @@
 <div class="row">
   <div class="offset-md-3 col-md-6">
     <div class="card mb-3">
-      <h2 class="card-header h4">
+      <h5 class="card-header">
         Sign In
-      </h2>
+      </h5>
 
       <div class="card-body">
         <% if flash[:notice].present? %>
@@ -37,7 +37,7 @@
             <% end -%>
           </div>
 
-          <%= f.submit "Sign in", class: "btn btn-outline-secondary btn-block" %>
+          <%= f.submit "Sign in", class: "btn btn-outline-primary btn-block" %>
 
           <%= render "devise/shared/links" %>
         <% end %>
