@@ -2,7 +2,7 @@
   <div class="offset-md-3 col-md-6">
     <div class="card mb-3">
       <h5 class="card-header">
-        Edit <%= resource_name.to_s.humanize %>
+        Edit <%= resource_name.to_s.titleize %>
       </h5>
 
       <div class="card-body">
@@ -82,7 +82,7 @@
 
             <small class="form-text text-muted">
               Leave blank if you don't want to change it.
-              
+
               <% if @minimum_password_length %>
                 <%= @minimum_password_length %> characters minimum.
               <% end %>
